@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1300px;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>mainCss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.header_section{
+    background-color: #fff;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    line-height: 24px;
+}
+.logo_div {
+    width: 20%;
+    margin-top: 10px;
+}
+.logo_div img{
+    width: 45px;
+    margin-left: 20px;
+}
+.logo_div h1 {
+    display: inline-block;
+    position: relative;
+    top: -43px;
+    left: 80px;
+    font-size: 25.6px;
+    font-weight: 500;
+    transition: .3s;
+    color: black;
+}
+.logo_div h1:hover{
+    color: #cccccc;
+}
+.menu_div {
+    width: 50%;
+    line-height: 50px;
+    margin-left: 129px;
+    margin-right: 120px;
+}
+.menu_div ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu_div ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: black;
+
+}
+.menu_div ul li a:hover{
+    color:#6278df;
+}
+.buy_now_btn_div {
+    margin-top: 16px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>DropDown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.menu_div ul li ul{
+    line-height: 22px !important;
+    width: 350px;
+    position: absolute;
+    top: 72%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+    z-index: 6;
+    background-color: #fff;
+}
+.menu_div ul li ul li a{
+    display: block;
+    text-decoration: none;
+
+}
+.menu_div ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>btn>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.buy_now_btn_div a {
+    display: inline-block;
+    padding: 8px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: white;
+    border: 2px solid #6278df;
+    color: #6278df;
+    transition: all .5s;
+}
+.buy_now_btn_div a:hover{
+    background-color: #6278df;
+    color: #fff;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>banner_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.banner_section{
+    background: url(https://i.ibb.co/C5RLyG9/mbr-4.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 200px 0px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 3;
+    height: 110px;
+}
+.banner_section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    z-index: -1;
+
+}
+.banner_text a {
+    text-decoration: none;
+    color: #7d7d7c;
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 10px;
+    font-size: 20.8px;
+    margin: 10px;
+    font-weight: 600;
+    transition: all .3s;
+    line-height: 31.2px;
+}
+.banner_text a:hover{
+    background-color: #6c78e1;
+    color: #fff;
+}
+.banner_text h2 {
+    font-size: 57.6px;
+    margin-bottom: 32px;
+    line-height: 63.36px;
+    font-weight: 700;
+    padding: 32px 0px 8px;
+}
+.banner_text h3 {
+    font-size: 25.6px;
+    padding: 10px 0px;
+    font-weight: 400;
+    line-height: 38.5px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>video_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.video_section {
+    padding: 100px 0px;
+    height: 450px;
+}
+.video_text {
+    margin-right: 43px;
+    width: 40%;
+    float: right;
+}
+.video_text h1{
+    font-size: 44.8px;
+    line-height: 62.72px;
+    font-weight: 400;
+}
+.video_text p{
+        font-size:20.8px;
+        margin-bottom: 5px;
+        color: #767676;
+        line-height: 31.2px;
+        padding: 32px 0px 0px;
+        font-weight: 300;
+}
+.video {
+    margin-left: 62px;
+    width: 45%;
+    float: left;
+    margin-top: 41px;
+}
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>learn_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.head{
+    font-size: 57.6px;
+    text-align: center;
+}
+.head h4{
+        font-size: 25px;
+        color: #767676;
+        font-weight: 300;
+        padding: 24px 0px 0px 0px;
+}
+.box{
+    padding: 48px 32px;
+    /* float: right; */
+    /* border: 1px solid #ddd; */
+    width: 27.3%;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 5px;
+    display: inline-block;
+}
+.ex_text{
+    float: right;
+    width: 70%;
+}
+.ex_text h3{
+    font-size: 25.6px;
+    font-weight: 500;
+    line-height: 38.5px;
+}
+.ex_text p{
+    font-size: 20.8px;
+    line-height: 31px;
+    color: #767676;
+
+}
+.ex_link{
+    padding: 10px 10px;
+    float: left;
+    font-size: 48px;
+    color: #6278df;
+}
