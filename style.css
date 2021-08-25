@@ -1,43 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.container{
+.container {
     max-width: 1300px;
+    margin: auto;
 }
-.clear::after{
+
+.clear::after {
     content: "";
     clear: both;
     display: block;
 }
-img{
+
+img {
     max-width: 100%;
 }
-.right{
+
+.right {
     float: right;
 }
-.left{
+
+.left {
     float: left;
 }
-body{
+
+body {
     font-family: "Work Sans", sans-serif;
 }
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>mainCss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.header_section{
+
+.header_section {
     background-color: #fff;
     height: 70px;
     border-bottom: 1px solid #ddd;
     line-height: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
 }
+
 .logo_div {
     width: 20%;
     margin-top: 10px;
 }
-.logo_div img{
+
+.logo_div img {
     width: 45px;
     margin-left: 20px;
 }
+
 .logo_div h1 {
     display: inline-block;
     position: relative;
@@ -48,35 +65,43 @@ body{
     transition: .3s;
     color: black;
 }
-.logo_div h1:hover{
+
+.logo_div h1:hover {
     color: #cccccc;
 }
+
 .menu_div {
     width: 50%;
     line-height: 50px;
     margin-left: 129px;
     margin-right: 120px;
 }
-.menu_div ul li{
+
+.menu_div ul li {
     display: inline-block;
     position: relative;
 }
+
 .menu_div ul li a {
     display: inline-block;
     text-decoration: none;
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 20px;
     color: black;
+}
 
+.menu_div ul li a:hover {
+    color: #6278df;
 }
-.menu_div ul li a:hover{
-    color:#6278df;
-}
+
 .buy_now_btn_div {
     margin-top: 16px;
 }
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>DropDown>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.menu_div ul li ul{
+
+.menu_div ul li ul {
     line-height: 22px !important;
     width: 350px;
     position: absolute;
@@ -88,16 +113,20 @@ body{
     z-index: 6;
     background-color: #fff;
 }
-.menu_div ul li ul li a{
+
+.menu_div ul li ul li a {
     display: block;
     text-decoration: none;
-
 }
-.menu_div ul li:hover ul{
+
+.menu_div ul li:hover ul {
     visibility: visible;
     opacity: 1;
 }
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>btn>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .buy_now_btn_div a {
     display: inline-block;
     padding: 8px 30px;
@@ -110,13 +139,16 @@ body{
     color: #6278df;
     transition: all .5s;
 }
-.buy_now_btn_div a:hover{
+
+.buy_now_btn_div a:hover {
     background-color: #6278df;
     color: #fff;
 }
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>banner_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-.banner_section{
+.banner_section {
     background: url(https://i.ibb.co/C5RLyG9/mbr-4.jpg) no-repeat center center;
     background-size: cover;
     padding: 200px 0px;
@@ -124,18 +156,24 @@ body{
     color: #fff;
     text-align: center;
     z-index: 3;
-    height: 110px;
+    height: 88px;
+    margin-top: 70px;
+
 }
-.banner_section::after{
+
+.banner_section::after {
     content: "";
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -1;
-
+}
+.banner_text{
+    margin-left: 110px;
+    margin-top: -60px;
 }
 .banner_text a {
     text-decoration: none;
@@ -149,10 +187,12 @@ body{
     transition: all .3s;
     line-height: 31.2px;
 }
-.banner_text a:hover{
+
+.banner_text a:hover {
     background-color: #6c78e1;
     color: #fff;
 }
+
 .banner_text h2 {
     font-size: 57.6px;
     margin-bottom: 32px;
@@ -160,53 +200,66 @@ body{
     font-weight: 700;
     padding: 32px 0px 8px;
 }
+
 .banner_text h3 {
     font-size: 25.6px;
     padding: 10px 0px;
     font-weight: 400;
     line-height: 38.5px;
 }
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>video_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
 .video_section {
     padding: 100px 0px;
     height: 450px;
 }
+
 .video_text {
     margin-right: 43px;
     width: 40%;
     float: right;
 }
-.video_text h1{
+
+.video_text h1 {
     font-size: 44.8px;
     line-height: 62.72px;
     font-weight: 400;
 }
-.video_text p{
-        font-size:20.8px;
-        margin-bottom: 5px;
-        color: #767676;
-        line-height: 31.2px;
-        padding: 32px 0px 0px;
-        font-weight: 300;
+
+.video_text p {
+    font-size: 20.8px;
+    margin-bottom: 5px;
+    color: #767676;
+    line-height: 31.2px;
+    padding: 32px 0px 0px;
+    font-weight: 300;
 }
+
 .video {
     margin-left: 62px;
     width: 45%;
     float: left;
     margin-top: 41px;
 }
+
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>learn_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-.head{
+
+.head {
     font-size: 57.6px;
     text-align: center;
 }
-.head h4{
-        font-size: 25px;
-        color: #767676;
-        font-weight: 300;
-        padding: 24px 0px 0px 0px;
+
+.head h4 {
+    font-size: 25px;
+    color: #767676;
+    font-weight: 300;
+    padding: 24px 0px 0px 0px;
 }
-.box{
+
+.box {
     padding: 48px 32px;
     /* float: right; */
     /* border: 1px solid #ddd; */
@@ -215,23 +268,27 @@ body{
     line-height: 24px;
     margin: 5px;
     display: inline-block;
+    box-shadow: 1px 1px 1px 1px #ddd;
 }
-.ex_text{
+
+.ex_text {
     float: right;
     width: 70%;
 }
-.ex_text h3{
+
+.ex_text h3 {
     font-size: 25.6px;
     font-weight: 500;
     line-height: 38.5px;
 }
-.ex_text p{
+
+.ex_text p {
     font-size: 20.8px;
     line-height: 31px;
     color: #767676;
-
 }
-.ex_link{
+
+.ex_link {
     padding: 10px 10px;
     float: left;
     font-size: 48px;
